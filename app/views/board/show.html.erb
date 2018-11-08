@@ -1,0 +1,15 @@
+<h1>게시판 목록</h1>
+
+<div class = "container">
+    <%= @post.title %> / <%= @post.editor %> / <%= @post.content %> / 
+    <a href = "/board/destroy/<%= @post.id %>">
+        [삭제]
+    </a>
+    <a href = "/board/edit/<%= @post.id %>">
+        [수정]
+    </a>    
+
+    </br>    
+    </br>
+</div>
+

@@ -1,0 +1,12 @@
+<h1>게시판 목록</h1>
+<a href="/board/new/">글쓰기</a>
+
+<% @all_post.each do |p| %>
+    <div>
+        <hr>
+        <a href = "/board/show/<%= p.id %>">
+            <%= p.title %>
+        </a>/<%= p.editor %>
+        </br>
+    </div>
+<% end %>
